@@ -14,6 +14,7 @@ Source:         http://www.cpan.org/modules/by-module/Catalyst/%{module}-%{versi
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
+BuildRequires:	perl(Catalyst::Runtime)
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}
 
