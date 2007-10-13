@@ -1,6 +1,6 @@
 %define module Catalyst-Plugin-Unicode
 %define name	perl-%{module}
-%define version	0.5
+%define version	0.8
 %define release	%mkrel 1
 
 Summary:	Unicode aware Catalyst
@@ -15,6 +15,7 @@ Source:         http://www.cpan.org/modules/by-module/Catalyst/%{module}-%{versi
 BuildRequires:	perl-devel
 %endif
 BuildRequires:	perl(Catalyst::Runtime)
+BuildRequires:	perl(Test::WWW::Mechanize::Catalyst)
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}
 
@@ -27,7 +28,7 @@ logical characters. On response, encodes body into UTF-8 octets.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+%{__perl} Makefile.PL INSTALLDIRS=vendor --skipdeps
 %make
 
 %check
