@@ -16,6 +16,7 @@ BuildRequires:	perl-devel
 %endif
 BuildRequires:	perl(Catalyst::Runtime)
 BuildRequires:	perl(Test::WWW::Mechanize::Catalyst)
+BuildRequires:	perl(Test::use::ok)
 BuildRequires:	perl(IO::Scalar)
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}
