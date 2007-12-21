@@ -19,6 +19,7 @@ BuildRequires:	perl(Test::WWW::Mechanize::Catalyst)
 BuildRequires:	perl(Test::use::ok)
 BuildRequires:	perl(IO::Scalar)
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 On request, decodes all params from UTF-8 octets into a sequence of
