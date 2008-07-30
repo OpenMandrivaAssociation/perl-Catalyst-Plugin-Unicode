@@ -1,7 +1,7 @@
 %define module Catalyst-Plugin-Unicode
 %define name	perl-%{module}
 %define version	0.8
-%define release	%mkrel 1
+%define release	%mkrel 3
 
 Summary:	Unicode aware Catalyst
 Name:		%{name}
