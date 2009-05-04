@@ -10,14 +10,12 @@ Release:	%{release}
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Catalyst/%{module}-%{version}.tar.bz2
-%if %{mdkversion} < 1010
-BuildRequires:	perl-devel
-%endif
+Source:         http://www.cpan.org/modules/by-module/Catalyst/%{module}-%{version}.tar.gz
 BuildRequires:	perl(Catalyst::Runtime)
 BuildRequires:	perl(Test::WWW::Mechanize::Catalyst)
 BuildRequires:	perl(Test::use::ok)
 BuildRequires:	perl(IO::Scalar)
+BuildRequires:	perl(MRO::Compat) >= 0.10
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}
 
